@@ -1,4 +1,5 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-npm run lint
+# Запуск линтера и прекращение коммита при ошибках
+npm run lint || exit 1
