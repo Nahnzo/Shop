@@ -3,7 +3,8 @@ import { useTheme } from '../shared/hooks/useTheme'
 
 function App() {
   const { theme } = useTheme()
-  const b: any = 5
+  const a: number = 1
+  console.log(a)
   return (
     <>
       <ThemeSwitcher />
