@@ -3,7 +3,7 @@ import { useTheme } from '../shared/hooks/useTheme'
 
 function App() {
   const { theme } = useTheme()
-  const a: number = 1
+  const a: number = 111
   console.log(a)
   return (
     <>
