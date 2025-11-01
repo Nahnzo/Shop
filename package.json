@@ -7,15 +7,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
-    "lint:staged": "lint-staged",
-    "preview": "vite preview",
-    "prepare": "husky install"
-  },
-  "lint-staged": {
-    "*.{js,ts,tsx}": [
-      "eslint --fix",
-      "git add"
-    ]
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^19.1.1",
@@ -31,7 +23,6 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.22",
     "globals": "^16.4.0",
-    "husky": "^9.1.7",
     "lint-staged": "^16.2.6",
     "sass": "^1.93.2",
     "typescript": "~5.9.3",
