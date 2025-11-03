@@ -11,11 +11,11 @@ export const ThemeProvider = ({ children }: ThemeProviderProps) => {
     return (localStorage.getItem('theme') as ThemeType) ?? 'light'
   })
 
-  const toggleTheme = () => {
+  const toggleTheme = (newTheme: ThemeType) => {
     setTheme((prev) => {
-      const newTheme = prev === 'light' ? 'dark' : 'light'
-      localStorage.setItem('theme', newTheme)
-      return newTheme
+      const actualTheme = newTheme ?? (prev === 'light' ? 'dark' : 'light')
+      localStorage.setItem('theme', actualTheme)
+      return actualTheme
     })
   }
 

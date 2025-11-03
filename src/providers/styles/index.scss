@@ -1,0 +1,19 @@
+@import 'variables/global';
+@import 'reset';
+@import 'themes/light';
+@import 'themes/dark';
+
+.app {
+  min-height: 100vh;
+  background: var(--bg-color);
+  font: var(--font-m);
+  color: var(--primary-color);
+}
+
+.content-page {
+  display: flex;
+}
+
+button:hover {
+  opacity: 0.7;
+}

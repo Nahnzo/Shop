@@ -1,23 +1,17 @@
-import { ThemeSwitcher } from '../features/ThemeSwitcher/ThemeSwitcher'
+import { ProductsList } from '../features'
 import { useTheme } from '../shared/hooks/useTheme'
+import { Navbar } from '../widgets'
+import './styles/index.scss'
 
 function App() {
   const { theme } = useTheme()
-  const a: number = 111
-  console.log(a)
   return (
-    <>
-      <ThemeSwitcher />
-      <div
-        style={{
-          width: '1000',
-          height: '1000px',
-          backgroundColor: theme === 'dark' ? '#ffffff' : '#000000',
-        }}
-      >
-        text
-      </div>
-    </>
+    <div className={`app app_${theme}_theme`}>
+      <Navbar />
+      <main className="main">
+        <ProductsList />
+      </main>
+    </div>
   )
 }
 
